@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,100" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116935204-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116935204-2');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mouse Pose Analysis Dataset</title>
+  </head>
+
+  <body>
+
+      <div class="inner-inner">
+        <p><h1>CT Scans</h1> </p>
+        <img src="assets/ct_scan_41.gif" width="500"/>
+        <p align="left">CT images of 80 C57BL/6N mice are acquired using a Siemens Inveon microPET/CT (Knoxville, TN). Animals underwent CT scans with the following settings: Total rotation of 220 degrees with 1 degree steps after 20 dark/light calibrations. The transaxial and axial field of view were 58.44 and 92.04 mm respectively. Exposure time was 800 ms with a binning factor of 2, the effective pixel size was 45.65 μm. The Voltage and current settings were 80 kV and 500 μA respectively. Total scan time per animal was estimated as 1010 seconds. CT images used the common cone-beam reconstruction method, included Houndsfield unit calibration, bilinear interpolation and a Hamming reconstruction filter. Reconstructed CT images are converted to DICOM using VivoQuant software</p>
+
+        <p><h1>Video Frames</h1> </p>
+      <div class="row" style='padding-top: 40px'>
+          <div class="col-4">
+            <img src="assets/background.gif" width="216"/>
+          </div>
+          <div class="col-4">
+            <img src="assets/drinking.gif" width="216"/>
+          </div>
+          <div class="col-4">
+            <img src="assets/eating.gif" width="216"/>
+          </div>
+        </div>
+        <div class="row" style='padding-top: 15px'>
+          <div class="col-3">
+            <img src="assets/grooming.gif" width="216"/>
+          </div>
+          <div class="col-3">
+            <img src="assets/sleeping.gif" width="216"/>
+          </div>
+          <div class="col-3">
+            <img src="assets/walking.gif" width="216"/>
+          </div>
+          <div class="col-3">
+            <img src="assets/wheel_running.gif" width="216"/>
+          </div>
+        </div>
+      <p align="left">Videos of a Diversity Outbred strain of mice that have a range of weights (approximately 20g to 60g), sexes (female or male), ages (1 to 3 years), and coat colors (albino, black, agouti) are captured from a single camera (Vium) at 24 frames per second.  From this diverse collection of videos, we manually select 455 video clips where the animals perform one of the following behaviors: standing, drinking, eating, grooming, sleeping, walking or running on the wheel. Each clip is 0.5 seconds long and sampled at 24HZ. Activities are manually labeled by the researchers by watching the clip and surrounding context.  The keypoints of the mouse in each of 12 frames from each clip are annotated by trained animal technicians. </p>
+      <p><h1> Keypoints Definitions</h1></p>
+      <table>
+        <tr><td rowspan="24"><img src="assets/keypoints-definition.png" height="800"/></td></tr>
+        <td><b>Keypoint Name</b></td>
+        <tr><td>NOSE</td></tr>
+        <tr><td>NECK</td></tr>
+        <tr><td>LEFT_EAR</td></tr>
+        <tr><td>RIGHT_EAR</td></tr>
+        <tr><td>LEFT_SHOULDER</td></tr>
+        <tr><td>RIGHT_SHOULDER</td></tr>
+        <tr><td>LEFT_FORE_PAW</td></tr>
+        <tr><td>RIGHT_FORE_PAW</td></tr>
+        <tr><td>LEFT_HIP</td></tr>
+        <tr><td>RIGHT_HIP</td></tr>
+        <tr><td>LEFT_HIND_PAW</td></tr>
+        <tr><td>RIGHT_HIND_PAW</td></tr>
+        <tr><td>ROOT_TAIL</td></tr>
+        <tr><td>MID_TAIL</td></tr>
+        <tr><td>TIP_TAIL</td></tr>
+        <tr><td>SPINE_MID</td></tr>
+        <tr><td>SPINE_HIP</td></tr>
+        <tr><td>LEFT_KNEE</td></tr>
+        <tr><td>RIGHT_KNEE</td></tr>
+        <tr><td>LEFT_ELBOW</td></tr>
+        <tr><td>RIGHT_ELBOW</td></tr>
+        <tr><td>SPINE_SHOULDER</td></tr>
+      </table>
+
+
+      <p><h1>Download</h1></p>
+      <p align="left">If you are interested in accessing the dataset, please fill out the following form.</p>
+
+      </div>
+
+      <p align="center">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdK8jHYPYRAqcWw0ick_zVainTwxzuJbTiVfC14aPzTH5Z9yA/viewform?embedded=true" width="640" height="1590" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </p>
+  </body>
+</html>
