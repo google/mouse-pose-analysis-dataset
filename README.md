@@ -1,6 +1,6 @@
 # mouse-pose-analysis-dataset
 
-**Mouse Pose Analysis Dataset** includes 80 CT scans, 5460 annotated video frames of mouse in their home cage, and annotated multiple-view frames.
+**Mouse Pose Analysis Dataset** includes 80 CT scans, 5460 annotated video frames of mouse in their home cage, and 108 annotated multiple-view frames.
 
 ## Downloads
 Follow the directions in the [dataset website](http://github.com/google/mouse-pose-analysis-dataset) to access the data.
