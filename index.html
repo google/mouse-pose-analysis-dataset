@@ -2,29 +2,21 @@
 <html>
   <head>
     <title>Mouse Pose Analysis Dataset</title>
-    <meta name="generator" content="Jekyll v3.9.0" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,100" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <script type="text/javascript" src="main.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116935204-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-116935204-2');
-    </script>
   </head>
-   <header class="page-header" role="banner">
-      <h1 class="project-name">The Mouse Data Analysis Dataset</h1>
-      <!-- Bo Hu, Bryan Seybold, Shan Yang, Avneesh Sud, Yi Liu, Karla Barron, Paulyn Cha, Marcelo Cosino, Ellie Karlsson, Janessa Kite, Ganesh Kolumam, Joseph Preciado, Jose Zavala-Solorio, Chunlian Zhang, Xiaomeng Zhang, Martin Voorbach, Ann E. Tovcimak, J. Graham Ruby, and David A. Ross, Abbvie, Calico Labs, Google -->
-  </header>
-
   <body>
-      <div class="inner-inner">
+   <div class="video-bg">
+    <video autoplay loop muted>
+     <source src="assets/running.mp4" type="video/mp4" />
+    </video>
+    <div class="content">
+      <h1 >The Mouse Pose Analysis Dataset</h1>
+    </div>
+  </div>
+      <div class="content">
         <p><h1 class="section-header">CT Scans</h1> </p>
         <img src="assets/ct_scan_41.gif" width="500"/>
         <p align="left">CT images of 80 C57BL/6N mice are acquired using a Siemens Inveon microPET/CT (Knoxville, TN). Animals underwent CT scans with the following settings: Total rotation of 220 degrees with 1 degree steps after 20 dark/light calibrations. The transaxial and axial field of view were 58.44 and 92.04 mm respectively. Exposure time was 800 ms with a binning factor of 2, the effective pixel size was 45.65 μm. The Voltage and current settings were 80 kV and 500 μA respectively. Total scan time per animal was estimated as 1010 seconds. CT images used the common cone-beam reconstruction method, included Houndsfield unit calibration, bilinear interpolation and a Hamming reconstruction filter. Reconstructed CT images are converted to DICOM using VivoQuant software</p>
@@ -56,6 +48,7 @@
           </div>
         </div>
       <p align="left">Videos of a Diversity Outbred strain of mice that have a range of weights (approximately 20g to 60g), sexes (female or male), ages (1 to 3 years), and coat colors (albino, black, agouti) are captured from a single camera (Vium) at 24 frames per second.  From this diverse collection of videos, we manually select 455 video clips where the animals perform one of the following behaviors: standing, drinking, eating, grooming, sleeping, walking or running on the wheel. Each clip is 0.5 seconds long and sampled at 24HZ. Activities are manually labeled by the researchers by watching the clip and surrounding context.  The keypoints of the mouse in each of 12 frames from each clip are annotated by trained animal technicians. </p>
+
       <p><h1 class="section-header"> Keypoints Definitions</h1></p>
       <table>
         <tr><td rowspan="24"><img src="assets/keypoints-definition.png" height="800"/></td></tr>
@@ -85,7 +78,7 @@
       </table>
 
       <p><h1 class="section-header">Multiple-View Keypoints</h1></p>
-      <p align="center">The Multiple-view video data is 35 consecutive frames of a single C57BL/6N mouse in a custom capture rig, which consists of a top-down RGB+Depth camera (Kinect) and two side RGB cameras with synchronized timing. The cameras are calibrated with overlapping fields of view. We label the keypoints in synchronized frames from each view and triangulate the 3D location of each keypoint that minimizes the reprojection errors. </p>
+      <p align="left">The Multiple-view video data is 35 consecutive frames of a single C57BL/6N mouse in a custom capture rig, which consists of a top-down RGB+Depth camera (Kinect) and two side RGB cameras with synchronized timing. The cameras are calibrated with overlapping fields of view. We label the keypoints in synchronized frames from each view and triangulate the 3D location of each keypoint that minimizes the reprojection errors. </p>
 
       <p><h1 class="section-header">Download</h1></p>
       <p align="left">If you are interested in accessing the dataset, please fill out the following form.</p>
