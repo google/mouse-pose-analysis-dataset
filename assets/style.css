@@ -24,6 +24,10 @@ body {
   width: 33.33%;
 }
 
+.col-5 {
+  width: 50%;
+}
+
 .col-4-disabled {
   width: 33.33%;
   pointer-events: none;
