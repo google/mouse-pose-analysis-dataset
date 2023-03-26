@@ -8,6 +8,15 @@ body {
   font-weight: 300;
 }
 
+td {
+    text-align: left;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+
 .col-1 {
   width: 8.33%;
 }
@@ -39,13 +48,27 @@ body {
   padding: 7px;
 }
 
+.odd {
+    width: 100%;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+}
+.even {
+    width: 100%;
+    background: #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+
+
 .content {
   text-align: center;
   width: 100%;
   max-width: 1000px;
   position: relative;
   margin: auto;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5;
 }
 

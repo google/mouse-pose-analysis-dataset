@@ -5,6 +5,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
   </head>
   <body>
@@ -17,6 +18,7 @@
     </div>
   </div>
       <div class="content">
+          <div class="odd">
         <p><h1 class="section-header">CT Scans</h1> </p>
         <div class="col-5">
         <img src="assets/ct_slices_41.gif" width="500"/>
@@ -24,8 +26,10 @@
         <div class="col-5">
         <img src="assets/ct_scan_41.gif" width="500"/>
         </div>
-        <p align="left">CT images of 80 C57BL/6N mice are acquired using a Siemens Inveon microPET/CT (Knoxville, TN). Animals underwent CT scans with the following settings: Total rotation of 220 degrees with 1 degree steps after 20 dark/light calibrations. The transaxial and axial field of view were 58.44 and 92.04 mm respectively. Exposure time was 800 ms with a binning factor of 2, the effective pixel size was 45.65 μm. The Voltage and current settings were 80 kV and 500 μA respectively. Total scan time per animal was estimated as 1010 seconds. CT images used the common cone-beam reconstruction method, included Houndsfield unit calibration, bilinear interpolation and a Hamming reconstruction filter. Reconstructed CT images are converted to DICOM using VivoQuant software</p>
+        <p align="left">CT images of 80 C57BL/6N mice are acquired using a Siemens Inveon microPET/CT (Knoxville, TN). Animals underwent CT scans with the following settings: Total rotation of 220 degrees with 1 degree steps after 20 dark/light calibrations. The transaxial and axial field of view were 58.44 and 92.04 mm respectively. Exposure time was 800 ms with a binning factor of 2, the effective pixel size was 45.65 μm. The Voltage and current settings were 80 kV and 500 μA respectively. Total scan time per animal was estimated as 1010 seconds. CT images used the common cone-beam reconstruction method, included Houndsfield unit calibration, bilinear interpolation and a Hamming reconstruction filter. Reconstructed CT images are converted to DICOM using VivoQuant software.</p>
+          </div>
 
+          <div class="even">
         <p><h1 class="section-header">Video Frames</h1> </p>
       <div class="row" style='padding-top: 40px'>
           <div class="col-4">
@@ -53,11 +57,13 @@
           </div>
         </div>
       <p align="left">Videos of a Diversity Outbred strain of mice that have a range of weights (approximately 20g to 60g), sexes (female or male), ages (1 to 3 years), and coat colors (albino, black, agouti) are captured from a single camera (Vium) at 24 frames per second.  From this diverse collection of videos, we manually select 455 video clips where the animals perform one of the following behaviors: standing, drinking, eating, grooming, sleeping, walking or running on the wheel. Each clip is 0.5 seconds long and sampled at 24HZ. Activities are manually labeled by the researchers by watching the clip and surrounding context.  The keypoints of the mouse in each of 12 frames from each clip are annotated by trained animal technicians. </p>
+          </div>
 
+          <div class="odd">
       <p><h1 class="section-header"> Keypoints Definitions</h1></p>
       <table>
         <tr><td rowspan="24"><img src="assets/keypoints-definition.png" height="800"/></td></tr>
-        <td><b>Keypoint Name</b></td>
+        <th><b>Keypoint Name</b></th>
         <tr><td>NOSE</td></tr>
         <tr><td>NECK</td></tr>
         <tr><td>LEFT_EAR</td></tr>
@@ -81,9 +87,13 @@
         <tr><td>RIGHT_ELBOW</td></tr>
         <tr><td>SPINE_SHOULDER</td></tr>
       </table>
+      </div>
 
+
+      <div class="even">
       <p><h1 class="section-header">Multiple-View Keypoints</h1></p>
       <p align="left">The Multiple-view video data is 35 consecutive frames of a single C57BL/6N mouse in a custom capture rig, which consists of a top-down RGB+Depth camera (Kinect) and two side RGB cameras with synchronized timing. The cameras are calibrated with overlapping fields of view. We label the keypoints in synchronized frames from each view and triangulate the 3D location of each keypoint that minimizes the reprojection errors. </p>
+      </div>
 
       <p><h1 class="section-header">Download</h1></p>
       <p align="left">If you are interested in accessing the dataset, please fill out the following form.</p>
