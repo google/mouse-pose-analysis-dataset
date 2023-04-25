@@ -66,31 +66,131 @@
         <th><b>Keypoint Name</b></th>
         <tr><td>NOSE</td></tr>
         <tr><td>NECK</td></tr>
-        <tr><td>LEFT_EAR</td></tr>
-        <tr><td>RIGHT_EAR</td></tr>
-        <tr><td>LEFT_SHOULDER</td></tr>
-        <tr><td>RIGHT_SHOULDER</td></tr>
-        <tr><td>LEFT_FORE_PAW</td></tr>
-        <tr><td>RIGHT_FORE_PAW</td></tr>
-        <tr><td>LEFT_HIP</td></tr>
-        <tr><td>RIGHT_HIP</td></tr>
-        <tr><td>LEFT_HIND_PAW</td></tr>
-        <tr><td>RIGHT_HIND_PAW</td></tr>
-        <tr><td>ROOT_TAIL</td></tr>
-        <tr><td>MID_TAIL</td></tr>
-        <tr><td>TIP_TAIL</td></tr>
-        <tr><td>SPINE_MID</td></tr>
-        <tr><td>SPINE_HIP</td></tr>
-        <tr><td>LEFT_KNEE</td></tr>
-        <tr><td>RIGHT_KNEE</td></tr>
-        <tr><td>LEFT_ELBOW</td></tr>
-        <tr><td>RIGHT_ELBOW</td></tr>
-        <tr><td>SPINE_SHOULDER</td></tr>
+        <tr><td>LEFT EAR</td></tr>
+        <tr><td>RIGHT EAR</td></tr>
+        <tr><td>LEFT SHOULDER</td></tr>
+        <tr><td>RIGHT SHOULDER</td></tr>
+        <tr><td>LEFT FORE_PAW</td></tr>
+        <tr><td>RIGHT FORE_PAW</td></tr>
+        <tr><td>LEFT HIP</td></tr>
+        <tr><td>RIGHT HIP</td></tr>
+        <tr><td>LEFT HIND_PAW</td></tr>
+        <tr><td>RIGHT HIND_PAW</td></tr>
+        <tr><td>ROOT TAIL</td></tr>
+        <tr><td>MID TAIL</td></tr>
+        <tr><td>TIP TAIL</td></tr>
+        <tr><td>SPINE MID</td></tr>
+        <tr><td>SPINE LOWER</td></tr>
+        <tr><td>LEFT KNEE</td></tr>
+        <tr><td>RIGHT KNEE</td></tr>
+        <tr><td>LEFT ELBOW</td></tr>
+        <tr><td>RIGHT ELBOW</td></tr>
+        <tr><td>SPINE UPPER</td></tr>
       </table>
       </div>
 
+          <div class="even">
+      <p><h1 class="section-header"> Definition of Kinematic Chain</h1></p>
+      <table align="center">
+        <tr>
+          <th>Joint</th>
+          <th>Label</th>
+          <th>Parent Label</th>
+        </tr>
+        <tr>
+          <td>SPINE UPPER</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>SPINE MID</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>SPINE LOWER</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>LEFT HIP</td>
+          <td>3</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>LEFT KNEE</td>
+          <td>4</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>LEFT ANKLE</td>
+          <td>5</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>RIGHT HIP</td>
+          <td>6</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>RIGHT KNEE</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>RIGHT ANKLE</td>
+          <td>8</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>ROOT TAIL</td>
+          <td>9</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>NECK</td>
+          <td>10</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>NOSE</td>
+          <td>11</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>LEFT SHOULDER</td>
+          <td>12</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>LEFT ELBOW</td>
+          <td>13</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>LEFT WRIST</td>
+          <td>14</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>RIGHT SHOULDER</td>
+          <td>15</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>RIGHT ELBOW</td>
+          <td>16</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>RIGHT WRIST</td>
+          <td>17</td>
+          <td>16</td>
+        </tr>
+</table>
+      </div>
 
-      <div class="even">
+      <div class="odd">
       <p><h1 class="section-header">Multiple-View Keypoints</h1></p>
       <p align="left">The Multiple-view video data is 35 consecutive frames of a single C57BL/6N mouse in a custom capture rig, which consists of a top-down RGB+Depth camera (Kinect) and two side RGB cameras with synchronized timing. The cameras are calibrated with overlapping fields of view. We label the keypoints in synchronized frames from each view and triangulate the 3D location of each keypoint that minimizes the reprojection errors. </p>
         <img src="assets/multiview.png" width="100%" alt="Multiple-view">
