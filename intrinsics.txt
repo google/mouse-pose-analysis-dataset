@@ -1,0 +1,4 @@
+# np.loadtxt('intrinsics.txt')
+411.15  0  443.0
+0 410.0  332.24
+0  0  1
